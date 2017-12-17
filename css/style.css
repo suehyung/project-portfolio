@@ -1,0 +1,92 @@
+/* BASIC */
+body, html {
+  margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+    
+body {
+	font-family: Roboto;
+	font-size: 12px;
+	color: #424242;
+	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+}
+    
+h1, h2, h3, h4, h5 {
+	margin: 0; 
+}
+    
+header, nav, footer, section, article, div {
+	box-sizing: border-box;
+}
+
+
+/* COMMON */
+.blue {
+	color: rgb(84, 120, 165);
+}
+  
+.right-align {
+	float: right;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #232323;
+	transition: color 0.3s ease;
+}
+  
+a:hover {
+	color: rgb(23, 87, 182);
+}
+
+
+/* HEADER */
+.header {
+	min-height: 56px;
+	/* transition: min-height 0.3s; */
+	position: relative;
+}
+  
+.header__logo {
+	height: 50px;
+	margin-left: 8px;
+	vertical-align: top;
+	margin-top: 0px;
+}
+
+.social-media {
+	padding-right: 10px;
+	padding-top: 36px;
+}
+  
+i.fa.fa-email, i.fa.fa-instagram, i.fa.fa-linkedin, i.fa.fa-github {
+	font-size: 22px;
+	height: 22px;
+	width: 20px;
+	margin: 8px;
+	text-align: center;
+	color: #424242;
+}
+
+i.fa.fa-email:focus, i.fa.fa-email:hover {
+	color: rgb(0, 93, 171);
+}
+
+i.fa.fa-instagram:focus, i.fa.fa-instagram:hover {
+	color: rgb(0, 93, 171);
+}
+
+i.fa.fa-linkedin:focus, i.fa.fa-linkedin:hover {
+	color: rgb(0, 93, 171);
+}
+
+i.fa.fa-github:focus, i.fa.fa-github:hover {
+	color: rgb(0, 93, 171);
+}
+  
+
+
+/* MAIN */
