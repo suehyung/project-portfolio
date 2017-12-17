@@ -2,14 +2,14 @@
 body, html {
   margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 100%;
 }
     
 body {
 	font-family: Roboto;
 	font-size: 12px;
 	color: #424242;
+	width: 100%;
+	max-width: 800px;
 	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
 }
     
@@ -23,8 +23,16 @@ header, nav, footer, section, article, div {
 
 
 /* COMMON */
-.blue {
+.dark-grey {
 	color: rgb(84, 120, 165);
+}
+
+.grey {
+	color: rgb(84, 120, 165);
+}
+
+.blue {
+	color: rgb(2, 179, 228);
 }
   
 .right-align {
@@ -44,17 +52,22 @@ a:hover {
 
 
 /* HEADER */
-.header {
+header {
 	min-height: 56px;
 	/* transition: min-height 0.3s; */
 	position: relative;
 }
-  
-.header__logo {
-	height: 50px;
-	margin-left: 8px;
-	vertical-align: top;
-	margin-top: 0px;
+
+.logo {
+	/* height: 50px; */
+	/* margin-left: 8px; */
+	/* vertical-align: top; */
+	/* margin-top: 0px; */
+}
+
+.mark {
+	fill: rgb(2, 179, 228);
+	d: path('M 29 0.5 l 1 0.5 v 13 c 0 5.55189 -2.8897 8.69569 -5.99522 10.0999 L 24.0094 24.1 l -7.62096 4.38856 c -0.05877 0.03456 -0.11776 0.068527 -0.176957 0.101902 l -0.08642 0.049764 l 0.001806 -0.00254 C 14.4829 29.5459 12.6847 30 11 30 C 6 30 0 26 0 18 V 6 l 2 1 v 11 c 0 8 6 10 9 10 c 1.85871 0 4.86901 -0.76773 6.89043 -3.25452 C 14.1817 23.8726 10 20.6787 10 14 V 2.2 L 2 7 L 0 6 l 10 -6 l 1 0.5 l 1 0.5 v 13 c 0 6.93996 4.51528 8.61209 7.01754 8.93337 C 19.6258 21.6216 20 19.9979 20 18 V 5 l 2 1 v 12 c 0 1.85264 -0.321777 3.49077 -0.878395 4.91438 C 23.6482 22.5492 28 20.8131 28 14 V 2.25 L 22 6 l -2 -1 l 8 -5 l 1 0.5 Z');
 }
 
 .social-media {
@@ -86,7 +99,19 @@ i.fa.fa-linkedin:focus, i.fa.fa-linkedin:hover {
 i.fa.fa-github:focus, i.fa.fa-github:hover {
 	color: rgb(0, 93, 171);
 }
-  
+
+.name {
+	font-size: 30px;
+}
+
+.title {
+	font-size: 22px;
+}
+
+.line {
+	size: 4px;
+	width: 100%;
+}
 
 
 /* MAIN */
