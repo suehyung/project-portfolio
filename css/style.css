@@ -2,14 +2,17 @@
 body, html {
   margin: 0;
 	padding: 0;
+	display: flex;
 }
     
 body {
-	font-family: Roboto;
+	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 	color: #424242;
 	width: 100%;
 	max-width: 800px;
+	padding: 5px;
+	margin: auto auto;
 	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
 }
     
@@ -38,6 +41,7 @@ header, nav, footer, section, article, div {
 .right-align {
 	float: right;
 	text-align: right;
+	flex: auto;
 }
 
 a {
@@ -53,43 +57,40 @@ a:hover {
 
 /* HEADER */
 header {
-	min-height: 56px;
-	/* transition: min-height 0.3s; */
-	position: relative;
+	width: 100%;
+}
+
+.container-logo {
+	vertical-align: top;
 }
 
 .logo {
-	/* height: 50px; */
-	/* margin-left: 8px; */
-	/* vertical-align: top; */
-	/* margin-top: 0px; */
+	margin: 3px;
 }
-
 .mark {
 	fill: rgb(2, 179, 228);
-	d: path('M 29 0.5 l 1 0.5 v 13 c 0 5.55189 -2.8897 8.69569 -5.99522 10.0999 L 24.0094 24.1 l -7.62096 4.38856 c -0.05877 0.03456 -0.11776 0.068527 -0.176957 0.101902 l -0.08642 0.049764 l 0.001806 -0.00254 C 14.4829 29.5459 12.6847 30 11 30 C 6 30 0 26 0 18 V 6 l 2 1 v 11 c 0 8 6 10 9 10 c 1.85871 0 4.86901 -0.76773 6.89043 -3.25452 C 14.1817 23.8726 10 20.6787 10 14 V 2.2 L 2 7 L 0 6 l 10 -6 l 1 0.5 l 1 0.5 v 13 c 0 6.93996 4.51528 8.61209 7.01754 8.93337 C 19.6258 21.6216 20 19.9979 20 18 V 5 l 2 1 v 12 c 0 1.85264 -0.321777 3.49077 -0.878395 4.91438 C 23.6482 22.5492 28 20.8131 28 14 V 2.25 L 22 6 l -2 -1 l 8 -5 l 1 0.5 Z');
+	margin-top: 3px;
 }
 
 .social-media {
-	padding-right: 10px;
-	padding-top: 36px;
+	height: 22px;
 }
   
-i.fa.fa-email, i.fa.fa-instagram, i.fa.fa-linkedin, i.fa.fa-github {
-	font-size: 22px;
-	height: 22px;
+i.fa.fa-envelope, i.fa.fa-instagram, i.fa.fa-linkedin, i.fa.fa-github {
+	font-size: 20px;
+	height: 20px;
 	width: 20px;
 	margin: 8px;
 	text-align: center;
 	color: #424242;
 }
 
-i.fa.fa-email:focus, i.fa.fa-email:hover {
-	color: rgb(0, 93, 171);
+i.fa.fa-envelope:focus, i.fa.fa-envelope:hover {
+	color: goldenrod;
 }
 
 i.fa.fa-instagram:focus, i.fa.fa-instagram:hover {
-	color: rgb(0, 93, 171);
+	color: rgb(233, 16, 204);
 }
 
 i.fa.fa-linkedin:focus, i.fa.fa-linkedin:hover {
@@ -97,21 +98,35 @@ i.fa.fa-linkedin:focus, i.fa.fa-linkedin:hover {
 }
 
 i.fa.fa-github:focus, i.fa.fa-github:hover {
-	color: rgb(0, 93, 171);
+	color: green;
 }
 
 .name {
-	font-size: 30px;
+	margin-top: 10px;
+	font-size: 34px;
+	align-self: right;
+	line-height: 1;
 }
 
 .title {
-	font-size: 22px;
+	font-size: 18px;
+	float: top;
+	align-self: bottom;
+	/* margin-left: 31px; */
 }
 
 .line {
-	size: 4px;
+	height: 6px;
 	width: 100%;
+	background-color: grey;
+	margin-top: 20px
 }
 
 
 /* MAIN */
+
+.container-img {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 300px;
+}
