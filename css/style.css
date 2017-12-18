@@ -140,6 +140,7 @@ main {
 	position: relative;
 	left: 5px;
 	top: 20px;
+	margin-bottom: 20px;
 }
 
 .container-img {
@@ -157,7 +158,6 @@ figure {
 	flex: 1 250px;
 	max-width: 350px;
 	margin: 5px;
-	margin-top: 20px;
 }
 
 figure img {
@@ -177,6 +177,7 @@ figcaption:hover {
 
 .caption-link {
 	margin-top: 0;
+	margin-bottom: 40px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
